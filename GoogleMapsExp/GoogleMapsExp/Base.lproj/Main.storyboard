@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleMapsExp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLE-nl-to6" userLabel="TopView">
+                                <rect key="frame" x="-4" y="623" width="379" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHD-4S-4GO">
+                                        <rect key="frame" x="192" y="0.0" width="179" height="44"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="map"/>
+                                        <connections>
+                                            <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AqT-PU-Rat"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTb-VP-FPQ">
+                                        <rect key="frame" x="8" y="0.0" width="179" height="44"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="directions">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createRoute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28V-dV-Cn1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28557339310646057" green="0.63745170831680298" blue="0.37836122512817383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DTb-VP-FPQ" firstAttribute="top" secondItem="NLE-nl-to6" secondAttribute="top" id="Cmy-n4-gLv"/>
+                                    <constraint firstAttribute="trailing" secondItem="CHD-4S-4GO" secondAttribute="trailing" constant="8" id="DFb-am-W9x"/>
+                                    <constraint firstItem="CHD-4S-4GO" firstAttribute="top" secondItem="NLE-nl-to6" secondAttribute="top" id="Li9-Lt-qwm"/>
+                                    <constraint firstItem="CHD-4S-4GO" firstAttribute="width" secondItem="DTb-VP-FPQ" secondAttribute="width" id="MS3-Tb-tVI"/>
+                                    <constraint firstAttribute="trailing" secondItem="DTb-VP-FPQ" secondAttribute="trailing" constant="192" id="VL1-XH-VcI"/>
+                                    <constraint firstAttribute="bottom" secondItem="CHD-4S-4GO" secondAttribute="bottom" id="kOT-pV-sGs"/>
+                                    <constraint firstItem="DTb-VP-FPQ" firstAttribute="leading" secondItem="NLE-nl-to6" secondAttribute="leading" constant="8" id="nhe-p5-lxR"/>
+                                    <constraint firstAttribute="bottom" secondItem="DTb-VP-FPQ" secondAttribute="bottom" id="uk8-NE-ual"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-yY-Zll" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="21" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Maps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4X-KL-Y2G">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28375175595283508" green="0.63362079858779907" blue="0.37456768751144409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="s4X-KL-Y2G" firstAttribute="top" secondItem="Zh0-yY-Zll" secondAttribute="top" id="DBI-ZE-oRY"/>
+                                    <constraint firstAttribute="trailing" secondItem="s4X-KL-Y2G" secondAttribute="trailing" constant="8" id="YIF-6T-qa5"/>
+                                    <constraint firstItem="s4X-KL-Y2G" firstAttribute="leading" secondItem="Zh0-yY-Zll" secondAttribute="leading" constant="8" id="oXE-qL-SvN"/>
+                                    <constraint firstAttribute="bottom" secondItem="s4X-KL-Y2G" secondAttribute="bottom" id="t5H-p6-uR4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTD-KG-GeD" userLabel="MapView" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="65" width="375" height="558"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NLE-nl-to6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3Z4-RP-vQR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bTD-KG-GeD" secondAttribute="trailing" constant="-16" id="9WE-cM-nMK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NLE-nl-to6" secondAttribute="trailing" constant="-16" id="KmT-lF-34k"/>
+                            <constraint firstItem="bTD-KG-GeD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="65" id="LyU-gZ-iPy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zh0-yY-Zll" secondAttribute="trailing" constant="-16" id="UkQ-US-Zwa"/>
+                            <constraint firstItem="NLE-nl-to6" firstAttribute="top" secondItem="bTD-KG-GeD" secondAttribute="bottom" id="V4G-zQ-PZ5"/>
+                            <constraint firstItem="bTD-KG-GeD" firstAttribute="top" secondItem="Zh0-yY-Zll" secondAttribute="bottom" id="XX3-NW-3W6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NLE-nl-to6" secondAttribute="bottom" id="b5r-Xm-Irr"/>
+                            <constraint firstItem="Zh0-yY-Zll" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="hVZ-A8-wlE"/>
+                            <constraint firstItem="bTD-KG-GeD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="sXq-El-wV3"/>
+                            <constraint firstItem="Zh0-yY-Zll" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="tQx-2n-GpL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bTD-KG-GeD" secondAttribute="bottom" constant="44" id="wCe-Xl-JYg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="directionsBtn" destination="DTb-VP-FPQ" id="ULD-Z8-ser"/>
+                        <outlet property="lblInfo" destination="s4X-KL-Y2G" id="2Uj-cj-ePB"/>
+                        <outlet property="mapTypeBtn" destination="CHD-4S-4GO" id="IK1-G1-p3U"/>
+                        <outlet property="mapView" destination="bTD-KG-GeD" id="S8i-Mq-MG0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="directions" width="30" height="30"/>
+        <image name="map" width="30" height="30"/>
+    </resources>
+</document>
