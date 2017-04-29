@@ -30,6 +30,7 @@
 		AB55E4841E6171B300048E1E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB55E4831E6171B300048E1E /* QuartzCore.framework */; };
 		AB55E4861E6171BE00048E1E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB55E4851E6171BE00048E1E /* SystemConfiguration.framework */; };
 		AB7FC9661E65DF2B0079442F /* MapAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7FC9651E65DF2B0079442F /* MapAccessory.swift */; };
+		ABF3956A1EB4784F009A0DF0 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF395691EB4784F009A0DF0 /* style.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		AB55E4831E6171B300048E1E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AB55E4851E6171BE00048E1E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AB7FC9651E65DF2B0079442F /* MapAccessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAccessory.swift; sourceTree = "<group>"; };
+		ABF395691EB4784F009A0DF0 /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 		E38F15D894827B6331F4C8F7 /* Pods-GoogleMapsExpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsExpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsExpTests/Pods-GoogleMapsExpTests.release.xcconfig"; sourceTree = "<group>"; };
 		E826D798592BE41C1AC27CD5 /* Pods-GoogleMapsExpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsExpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsExpTests/Pods-GoogleMapsExpTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 		AB26BADC1E6165F4002BFE4B /* GoogleMapsExp */ = {
 			isa = PBXGroup;
 			children = (
+				ABF395691EB4784F009A0DF0 /* style.json */,
 				AB26BADD1E6165F4002BFE4B /* AppDelegate.swift */,
 				AB26BADF1E6165F4002BFE4B /* ViewController.swift */,
 				AB26BAE11E6165F4002BFE4B /* Main.storyboard */,
@@ -335,6 +338,7 @@
 				AB26BAE81E6165F4002BFE4B /* LaunchScreen.storyboard in Resources */,
 				AB26BAE51E6165F4002BFE4B /* Assets.xcassets in Resources */,
 				AB26BAE31E6165F4002BFE4B /* Main.storyboard in Resources */,
+				ABF3956A1EB4784F009A0DF0 /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
